@@ -16,4 +16,9 @@ public class Clinica {
         this.cnpj = cnpj;
 
     }
+    public Clinica(String nome){
+        this.nome = nome;
+
+
+    }
 }

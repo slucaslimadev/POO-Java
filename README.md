@@ -1,71 +1,94 @@
-# 📚 Projeto de Exercícios de Programação Orientada a Objetos em Java
 
-Este repositório é uma coleção de exercícios práticos desenvolvidos em Java, com foco nos conceitos e pilares da **Programação Orientada a Objetos (POO)**. O projeto foi elaborado como parte dos estudos no curso do Senai, visando consolidar o entendimento e a aplicação dos princípios de POO através de exemplos de código.
+# Projeto de Sistema para Clínica Fonoaudiológica
 
+Este é um projeto desenvolvido no curso de **Desenvolvedor Java** do **SENAI**. O sistema simula o cadastro e exibição de informações relacionadas a uma clínica fonoaudiológica, incluindo exercícios, profissionais, pacientes e clínicas.
 
+## 💻 Tecnologias utilizadas
 
-## ✨ Sobre o Projeto
+- Java
+- Orientação a Objetos (POO)
 
-Este projeto serve como um ambiente de aprendizado e demonstração, contendo diversas implementações que ilustram como os conceitos de POO são aplicados no desenvolvimento de software. Cada exercício ou conjunto de classes foi projetado para destacar um ou mais aspectos da POO, facilitando a compreensão e a prática.
+## 📚 Descrição do projeto
 
+O projeto implementa as seguintes classes principais:
 
+### ✅ `Profissional`
 
-## 🚀 Tecnologias e Ferramentas
+Representa um profissional da área de fonoaudiologia.
 
-* **Java**: A linguagem de programação central para todos os exercícios.
-* **IntelliJ IDEA** (ou outra IDE de sua preferência como Eclipse, VS Code): Ambiente de Desenvolvimento Integrado utilizado para codificação e depuração.
-* **Git**: Sistema de controle de versão para gerenciar as alterações e o progresso dos exercícios.
+**Atributos:**
+- `id`: identificador.
+- `nome`: nome do profissional.
+- `telefone`: telefone de contato.
 
+**Métodos principais:**
+- Getters e Setters para nome e telefone.
+- Construtor para inicialização dos dados.
 
+---
 
-## 💡 Conceitos de POO Abordados
+### ✅ `Paciente`
 
-Cada exercício neste projeto foi cuidadosamente planejado para ilustrar e aplicar os quatro pilares fundamentais da Programação Orientada a Objetos, além de outros conceitos importantes:
+Representa um paciente da clínica.
 
-### 1. **Abstração**
-Os exercícios demonstram como **modelar entidades do mundo real em classes Java**, focando apenas nos atributos e comportamentos essenciais para cada problema proposto. Isso ajuda a praticar a simplificação de cenários complexos.
+**Atributos:**
+- `id`: identificador.
+- `nome`: nome do paciente.
+- `email`: e-mail de contato.
 
-### 2. **Encapsulamento**
-A prática do encapsulamento é fundamental. Nos exercícios, você verá como **proteger os dados internos das classes** (atributos `private`), controlando o acesso e a modificação através de métodos públicos (`getters` e `setters`), garantindo a integridade dos objetos.
+**Métodos principais:**
+- Getters e Setters para nome e e-mail.
+- Construtor para inicialização dos dados.
 
-### 3. **Herança**
-Diversos exemplos exploram a herança para **promover a reutilização de código e estabelecer relações "é um tipo de"** entre classes. Você verá como classes base (superclasses) podem compartilhar funcionalidades com classes mais específicas (subclasses), evitando duplicação.
+---
 
-### 4. **Polimorfismo**
-O polimorfismo é abordado através da **capacidade de objetos de diferentes classes responderem à mesma chamada de método de maneiras distintas**. Isso é demonstrado com a sobrescrita de métodos (`@Override`), permitindo soluções mais flexíveis e genéricas.
+### ✅ `Exercicio`
 
+Representa um exercício de fonoaudiologia.
 
+**Atributos:**
+- `id`: identificador.
+- `nome`: nome do exercício.
+- `descricao`: descrição do exercício.
+- `som`: som relacionado ao exercício.
+- `tempoMin`: tempo mínimo de execução.
+- `exemplo`: exemplo prático.
 
-## ⚙️ Como Executar os Exercícios
+**Métodos principais:**
+- Getters para todos os atributos.
+- Múltiplos construtores para diferentes cenários de inicialização.
 
-Siga os passos abaixo para clonar o repositório e explorar os exercícios:
+---
 
-1.  **Clone o Repositório:**
-    ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    ```
-    Substitua `<URL_DO_SEU_REPOSITORIO>` pelo link HTTPS ou SSH do seu repositório GitHub.
+### ✅ `Clinica`
 
-2.  **Abra o Projeto na sua IDE:**
-    * **IntelliJ IDEA:** Selecione `File > Open...` e navegue até a pasta raiz do projeto clonado.
-    * **Eclipse:** Selecione `File > Import... > Maven > Existing Maven Projects` (se for um projeto Maven) ou `File > Import... > General > Existing Projects into Workspace` e aponte para a pasta do projeto.
+Representa uma clínica de fonoaudiologia.
 
-3.  **Navegue e Execute:**
-    * Explore as diferentes pastas ou pacotes que contêm os exercícios. Cada exercício geralmente terá uma classe `Main` (ou similar) que demonstra seu funcionamento.
-    * Para executar um exercício específico, localize a classe principal correspondente, clique com o botão direito do mouse sobre ela e selecione `Run 'NomeDaClasse.main()'` ou utilize o botão de "Play" (Run) na barra de ferramentas da sua IDE.
+**Atributos:**
+- `id`: identificador.
+- `nome`: nome da clínica.
+- `cnpj`: CNPJ da clínica.
 
+**Métodos principais:**
+- Getters para nome e CNPJ.
+- Construtores para inicialização completa ou parcial.
 
+---
 
-## 🤝 Contribuições
+### ✅ `App`
 
-Este projeto é parte de um trabalho acadêmico no Senai. Não há expectativas de contribuições externas, mas sinta-se à vontade para inspecionar o código e usá-lo como material de estudo.
+Classe principal que executa o programa:
 
+- Cria instâncias de `Exercicio`, `Clinica`, `Paciente` e `Profissional`.
+- Exibe os dados no console com `System.out.println`.
 
+---
 
-## 👨‍💻 Desenvolvedor
+---
+### 👨‍🎓 Autor
+Projeto desenvolvido por Lucas dos Santos lima como parte das atividades do curso Desenvolvedor Java - SENAI.
 
-* **Lucas dos Santos Lima** 
+### 📌 Observações
+Este projeto foi feito para fins educacionais, com o objetivo de praticar conceitos de Programação Orientada a Objetos.
 
-
-
-
+Melhorias futuras podem incluir armazenamento em banco de dados e interface gráfica.

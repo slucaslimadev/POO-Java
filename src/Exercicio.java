@@ -47,6 +47,10 @@ public class Exercicio {
         this.descricao = descricao;
         this.exemplo = exemplo;
     }
+    
+    public Exercicio(String nome){
+        this.nome = nome;
+    }
 
 
 }
