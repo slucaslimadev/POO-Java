@@ -84,9 +84,10 @@ Classe principal que executa o programa:
 
 ---
 
----
 ### 👨‍🎓 Autor
 Projeto desenvolvido por Lucas dos Santos lima como parte das atividades do curso Desenvolvedor Java - SENAI.
+
+---
 
 ### 📌 Observações
 Este projeto foi feito para fins educacionais, com o objetivo de praticar conceitos de Programação Orientada a Objetos.
